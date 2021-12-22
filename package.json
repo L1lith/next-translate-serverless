@@ -1,0 +1,60 @@
+{
+  "name": "next-translate-serverless",
+  "version": "0.0.1",
+  "description": "A serverless oriented translation library for Next.js",
+  "license": "MIT",
+  "main": "./dist/Next-Translate-Serverless.js",
+  "scripts": {
+    "build": "microbundle",
+    "build-production": "cross-env NODE_ENV=production microbundle",
+    "dev": "cross-env NODE_ENV=development microbundle watch",
+    "build-docs": "cd docs-source && cross-env NODE_ENV=production npm run deploy",
+    "test": "mocha \"tests/**/*.js\"",
+    "prepublishOnly": "npm run build-production&&npm run test",
+    "publish-alias": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L1lith/Next-Translate-Serverless.git"
+  },
+  "keywords": [
+    "next",
+    "next.js",
+    "routes",
+    "router",
+    "routing",
+    "react",
+    "intl",
+    "i18n",
+    "dynamic",
+    "serverless"
+  ],
+  "files": [
+    "/dist/Next-Translate-Serverless.js",
+    "/dist/Next-Translate-Serverless.js.map",
+    "LICENSE.md"
+  ],
+  "author": "Lilith",
+  "bugs": {
+    "url": "https://github.com/L1lith/Next-Translate-Serverless/issues"
+  },
+  "homepage": "https://github.com/L1lith/Next-Translate-Serverless#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "benchmark": "^2.1.4",
+    "chai": "^4.2.0",
+    "colors": "^1.4.0",
+    "cross-env": "^7.0.3",
+    "deepmerge": "^3.3.0",
+    "microbundle": "^0.13.0",
+    "mocha": "^8.2.1",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "optionalDependencies": {
+    "is-my-ip-valid": "^1.0.0"
+  }
+}
