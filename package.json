@@ -4,6 +4,7 @@
   "description": "A serverless oriented translation library for Next.js",
   "license": "MIT",
   "main": "./dist/Next-Translate-Serverless.js",
+  "source": "./source/index.js",
   "scripts": {
     "build": "microbundle",
     "build-production": "cross-env NODE_ENV=production microbundle",
