@@ -13,7 +13,7 @@ const configFormat = {
   strict: false
 }
 
-function withNextTranslate(config) {
+function withTranslations(config) {
   sanitize(config, configFormat)
   const { i18n } = config
   const { defaultLocale, locales } = i18n
@@ -34,4 +34,4 @@ function withNextTranslate(config) {
   return { ...config, exportPathMap }
 }
 
-export default withNextTranslate
+export default withTranslations

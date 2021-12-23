@@ -1,2 +1,5 @@
-export { default as withTranslations } from './withNextTranslate'
+export { default as withTranslations } from './withTranslations'
 export { default as useTranslation } from './useTranslations'
+export { default as useLocale } from './useLocale'
+export { default as withLanguageProvider } from './withLanguageProvider'
+export { default as Link } from './Link'

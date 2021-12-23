@@ -1,5 +1,8 @@
+import DefaultContext from './DefaultContext'
+import { useContext } from 'react'
+
 function useLocale() {
-  const { defaultLocale, locales, pathName } = useRouter()
+  return useContext(DefaultContext)
 }
 
 export default useLocale
